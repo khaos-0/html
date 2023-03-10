@@ -1,0 +1,277 @@
+<!--CSS TUTORIAL-->
+<!DOCTYPE html> 
+<html lang="en">
+    <meta charset="UTF-8">
+    <head>
+        <title>style</title>
+        <style>
+             div {
+                color:white;
+                background-color: black;
+                text-align: center;
+                padding:20px;
+                margin:30px;
+            }
+            h2 {
+                color:black;
+                text-align: center;
+                background-color: blue;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <h1 style="color:red;text-align: center;background-color: black;">IM A HEADING</h1>
+        <h2>IM AN ANOTHER HEADING</h2>
+        <div>
+            <h1>AND OTHER HEADING ONE</h1>
+            <h2>AND OTHER HEADING TWO</h2>
+            <h3>AND OTHER HEADING THREE</h3>
+        </div>
+    </body>
+</html>
+
+<!----Font---->
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <head>
+        <title>Font</title>
+        <style>
+            p {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 28px;
+                font-weight: bold;
+                border: 10px solid red;
+                margin: 20px;
+                padding: 20px;
+                text-align: center;
+                background-color: black;
+                color:red
+            }
+        </style>
+    </head>
+    <body>
+        <p>HELLO MY NAME IS GUSTAVO<br>BUT YOU CAN CALL ME<br>GUSSS</p>
+    </body>
+</html>
+
+<!--lets make a table --->
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <head>
+        <title>table</title>
+        <style>
+            table {background-color: orange;
+                border: 3px solid black;
+            border-collapse: collapse;
+            margin-left: 100px;}
+            
+            td, tr {
+                font-size: 20px;
+                border: 3px solid black;
+                padding:3px;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <td>Average IQ Levels In Countries</td>
+                    <td>Italy</td>
+                    <td>England</td>
+                    <td>France</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="text-align: center;">-</td>
+                    <td>102</td>
+                    <td>100</td>
+                    <td>98</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
+
+<!----CLASS AND ID---->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>class and id</title>
+        <style>
+            #foo {
+                color:orange;
+                background-color: black ;
+                margin-right: 500px;
+                text-align: center;
+                }
+            .pizza {
+                background-color: orange;
+                margin-right:500px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h4 id="fools">I HAVE AN ID BITCHES</h4>
+        <h5 class="pizza">I AM STARVING</h5>
+        <h6 class="pizza">BUT I HAVE TO WRİTE THIS</h6>
+    </body>
+</html>
+
+<h1>SELECTORS IN CSS</h1>
+<ol>
+    <li>Multiple Element Selector a,b</li>
+    <li>Descendant Selector a b</li>
+    <li>Child Selector a&gt;b</li>
+    <li>Attribute Selector [a=b]</li>
+    <li>Pseudoclass Selector a:b</li>
+    <li>Pseudoelement Selector a::b</li>
+</ol>
+
+<!--Multiple Element Selector a,b 
+--------------------------------
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            h1,h2 {
+                color:purple
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hello</h1>
+        <h2>world!</h2>
+    </body>
+</html>-->
+
+<!--Descendant Selector a b
+-----------------------
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            ol  li {
+                background-color: red;
+
+            }
+        </style>
+    </head>
+    <body>
+        <ol>
+            <li>Element 1</li>
+            <li>Element 2</li>
+        </ol>
+    </body>
+</html>-->
+
+<!--Child Selector a > b
+-----------------------
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            ol > li {
+                background-color: red;
+
+            }
+        </style>
+    </head>
+    <body>
+        <ol>
+            <li>Element 1</li>
+            <li>Element 2</li>
+            <ul>
+                <li>hamburger</li>
+                <li>Im still hungry</li>
+            </ul>
+        </ol>
+    </body>
+</html>-->
+
+----Hover----
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <head>
+        <title>Hover</title>
+        <style>
+            button {
+                width: 200px;
+                height: 50px;
+                font-size: 24px;
+                background-color: green;
+            }
+            button:hover {
+                background-color: red;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <br>
+        <button>
+            Click me!
+        </button>
+    </body>
+</html>
+
+<!--Resposive Design
+1)viewport:
+<meta name="viewport" content="width =device width",initial scale="1.0">
+2)Media Querres:
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <head>Media Querres</head>
+    @media (min-width:600px){body{background-color:red;}}
+    @media (min-width:601px){body{background-color:blue}}
+    <body>
+        <p id="a">help!</p>
+    </body>
+</html>
+3)flexbox:
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            #container {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .grid {
+                background-color: green;
+                display:grid;
+                grid-column-gap: 20px;
+                grid-row-gap: 300px;
+                grid-template-columns: 200px,200px,auto;
+
+            }
+            .grid.item {
+                background-color: white;
+                font-size: 20px;
+                padding:20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h6 id="container">HELLOOOO</h6>
+        
+        <h3 class="grid.item">WOORRRLLLDDD!!!!</h3>
+        <h3 class="grid.item">WOORRRLLLDDD!!!!</h3>
+        <h3 class="grid.item">WOORRRLLLDDD!!!!</h3>
+        <h3 class="grid.item">WOORRRLLLDDD!!!!</h3>
+        <h3 class="grid.item">WOORRRLLLDDD!!!!</h3>
+        <h3 class="grid.item">WOORRRLLLDDD!!!!</h3>
+        <h3 class="grid.item">WOORRRLLLDDD!!!!</h3>
+        <h3 class="grid.item">WOORRRLLLDDD!!!!</h3>
+        <h3 class="grid.item">WOORRRLLLDDD!!!!</h3>
+       
+    </body>
+</html>>
+ 
